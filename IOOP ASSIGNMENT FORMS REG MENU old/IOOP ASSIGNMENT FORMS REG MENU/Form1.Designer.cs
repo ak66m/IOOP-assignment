@@ -1,6 +1,6 @@
 ﻿namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
 {
-    partial class Registeration
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,218 +28,153 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Purchase = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Backbutton = new System.Windows.Forms.Button();
-            this.RegisterBTN = new System.Windows.Forms.Button();
-            this.RegisterationForm = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.Label();
-            this.FullName = new System.Windows.Forms.Label();
-            this.PhoneNumber = new System.Windows.Forms.Label();
-            this.Address = new System.Windows.Forms.Label();
-            this.Gender = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.Username = new System.Windows.Forms.Label();
-            this.Password = new System.Windows.Forms.Label();
-            this.tologinbtn = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.start = new System.Windows.Forms.DateTimePicker();
+            this.end = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(23, 512);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 45);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(647, 496);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(108, 45);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Menu";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Purchase
+            // 
+            this.Purchase.Location = new System.Drawing.Point(329, 449);
+            this.Purchase.Name = "Purchase";
+            this.Purchase.Size = new System.Drawing.Size(138, 70);
+            this.Purchase.TabIndex = 2;
+            this.Purchase.Text = "Purchase";
+            this.Purchase.UseVisualStyleBackColor = true;
+            this.Purchase.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(237, 93);
+            this.textBox1.Location = new System.Drawing.Point(329, 45);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(505, 167);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(310, 22);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(564, 280);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(233, 22);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(215, 165);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(166, 22);
-            this.textBox5.TabIndex = 4;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(546, 98);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(251, 22);
-            this.textBox6.TabIndex = 5;
+            this.textBox1.Size = new System.Drawing.Size(279, 22);
+            this.textBox1.TabIndex = 3;
             // 
             // comboBox1
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(366, 375);
+            this.comboBox1.Location = new System.Drawing.Point(329, 114);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 6;
+            this.comboBox1.Size = new System.Drawing.Size(279, 24);
+            this.comboBox1.TabIndex = 4;
             // 
-            // Backbutton
+            // comboBox2
             // 
-            this.Backbutton.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.Backbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Backbutton.Location = new System.Drawing.Point(670, 447);
-            this.Backbutton.Name = "Backbutton";
-            this.Backbutton.Size = new System.Drawing.Size(108, 47);
-            this.Backbutton.TabIndex = 7;
-            this.Backbutton.Text = "Back";
-            this.Backbutton.UseVisualStyleBackColor = false;
-            this.Backbutton.Click += new System.EventHandler(this.Backbutton_Click);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(329, 159);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(279, 24);
+            this.comboBox2.TabIndex = 5;
             // 
-            // RegisterBTN
+            // label1
             // 
-            this.RegisterBTN.BackColor = System.Drawing.Color.Lime;
-            this.RegisterBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegisterBTN.Location = new System.Drawing.Point(358, 447);
-            this.RegisterBTN.Name = "RegisterBTN";
-            this.RegisterBTN.Size = new System.Drawing.Size(116, 56);
-            this.RegisterBTN.TabIndex = 8;
-            this.RegisterBTN.Text = "Submit";
-            this.RegisterBTN.UseVisualStyleBackColor = false;
-            this.RegisterBTN.Click += new System.EventHandler(this.RegisterBTN_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(83, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Enter ID";
             // 
-            // RegisterationForm
+            // label2
             // 
-            this.RegisterationForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegisterationForm.Location = new System.Drawing.Point(310, 13);
-            this.RegisterationForm.Name = "RegisterationForm";
-            this.RegisterationForm.Size = new System.Drawing.Size(265, 39);
-            this.RegisterationForm.TabIndex = 10;
-            this.RegisterationForm.Text = "Registeration Form";
-            this.RegisterationForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.RegisterationForm.Click += new System.EventHandler(this.label1_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(83, 114);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(157, 17);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Select Payment Method";
             // 
-            // ID
+            // label3
             // 
-            this.ID.AutoSize = true;
-            this.ID.Location = new System.Drawing.Point(184, 98);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(25, 17);
-            this.ID.TabIndex = 11;
-            this.ID.Text = "ID:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(83, 166);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(165, 17);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Select Type of Insurance";
             // 
-            // FullName
+            // start
             // 
-            this.FullName.AutoSize = true;
-            this.FullName.Location = new System.Drawing.Point(445, 98);
-            this.FullName.Name = "FullName";
-            this.FullName.Size = new System.Drawing.Size(75, 17);
-            this.FullName.TabIndex = 12;
-            this.FullName.Text = "Full Name:";
+            this.start.Location = new System.Drawing.Point(329, 227);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(200, 22);
+            this.start.TabIndex = 10;
             // 
-            // PhoneNumber
+            // end
             // 
-            this.PhoneNumber.AutoSize = true;
-            this.PhoneNumber.Location = new System.Drawing.Point(102, 170);
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Size = new System.Drawing.Size(107, 17);
-            this.PhoneNumber.TabIndex = 13;
-            this.PhoneNumber.Text = "Phone Number:";
+            this.end.Location = new System.Drawing.Point(329, 313);
+            this.end.Name = "end";
+            this.end.Size = new System.Drawing.Size(200, 22);
+            this.end.TabIndex = 11;
             // 
-            // Address
+            // label4
             // 
-            this.Address.AutoSize = true;
-            this.Address.Location = new System.Drawing.Point(423, 173);
-            this.Address.Name = "Address";
-            this.Address.Size = new System.Drawing.Size(64, 17);
-            this.Address.TabIndex = 15;
-            this.Address.Text = "Address:";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(83, 232);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(195, 17);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Select Start date of Insurance";
             // 
-            // Gender
+            // label5
             // 
-            this.Gender.AutoSize = true;
-            this.Gender.Location = new System.Drawing.Point(288, 381);
-            this.Gender.Name = "Gender";
-            this.Gender.Size = new System.Drawing.Size(60, 17);
-            this.Gender.TabIndex = 16;
-            this.Gender.Text = "Gender:";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(83, 318);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(189, 17);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Select end date of Insurance";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(258, 281);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 17;
-            // 
-            // Username
-            // 
-            this.Username.AutoSize = true;
-            this.Username.Location = new System.Drawing.Point(172, 286);
-            this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(77, 17);
-            this.Username.TabIndex = 18;
-            this.Username.Text = "Username:";
-            this.Username.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // Password
-            // 
-            this.Password.AutoSize = true;
-            this.Password.Location = new System.Drawing.Point(475, 285);
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(73, 17);
-            this.Password.TabIndex = 19;
-            this.Password.Text = "Password:";
-            // 
-            // tologinbtn
-            // 
-            this.tologinbtn.BackColor = System.Drawing.Color.OrangeRed;
-            this.tologinbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tologinbtn.Location = new System.Drawing.Point(44, 428);
-            this.tologinbtn.Name = "tologinbtn";
-            this.tologinbtn.Size = new System.Drawing.Size(114, 52);
-            this.tologinbtn.TabIndex = 20;
-            this.tologinbtn.Text = "Login";
-            this.tologinbtn.UseVisualStyleBackColor = false;
-            this.tologinbtn.Click += new System.EventHandler(this.tologinbtn_Click);
-            // 
-            // Registeration
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(843, 525);
-            this.Controls.Add(this.tologinbtn);
-            this.Controls.Add(this.Password);
-            this.Controls.Add(this.Username);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.Gender);
-            this.Controls.Add(this.Address);
-            this.Controls.Add(this.PhoneNumber);
-            this.Controls.Add(this.FullName);
-            this.Controls.Add(this.ID);
-            this.Controls.Add(this.RegisterationForm);
-            this.Controls.Add(this.RegisterBTN);
-            this.Controls.Add(this.Backbutton);
+            this.ClientSize = new System.Drawing.Size(800, 597);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.end);
+            this.Controls.Add(this.start);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "Registeration";
-            this.Text = "Registeration Form";
-            this.Load += new System.EventHandler(this.Registeration_Load);
+            this.Controls.Add(this.Purchase);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Name = "Form1";
+            this.Text = "Payment Form";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,24 +182,18 @@
 
         #endregion
 
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Purchase;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button Backbutton;
-        private System.Windows.Forms.Button RegisterBTN;
-        private System.Windows.Forms.Label RegisterationForm;
-        private System.Windows.Forms.Label ID;
-        private System.Windows.Forms.Label FullName;
-        private System.Windows.Forms.Label PhoneNumber;
-        private System.Windows.Forms.Label Address;
-        private System.Windows.Forms.Label Gender;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label Username;
-        private System.Windows.Forms.Label Password;
-        private System.Windows.Forms.Button tologinbtn;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker start;
+        private System.Windows.Forms.DateTimePicker end;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
-

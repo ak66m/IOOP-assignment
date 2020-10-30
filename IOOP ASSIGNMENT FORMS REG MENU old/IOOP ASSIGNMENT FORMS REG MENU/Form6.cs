@@ -33,5 +33,26 @@ namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
             MenuForm f2 = new MenuForm();
             f2.Show();
         }
+
+        private void PurchasThirdParty_Click(object sender, EventArgs e)
+        {
+            payfrm f8 = new payfrm();
+            f8.Show();
+            this.Hide();
+        }
+
+        private void PurchaseFireandTheft_Click(object sender, EventArgs e)
+        {
+            payfrm f8 = new payfrm();
+            f8.Show();
+            this.Hide();
+        }
+
+        private void PurchaseComp_Click(object sender, EventArgs e)
+        {
+            payfrm f8 = new payfrm();
+            f8.Show();
+            this.Hide();
+        }
     }
 }

@@ -28,37 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PurchaseFireandTheft = new System.Windows.Forms.Button();
-            this.PurchaseComp = new System.Windows.Forms.Button();
             this.maimenubtn = new System.Windows.Forms.Button();
             this.PurchasThirdParty = new System.Windows.Forms.Button();
             this.Newinslbl = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.PurchaseComp = new System.Windows.Forms.Button();
+            this.PurchaseFireandTheft = new System.Windows.Forms.Button();
             this.thirdpartylbl = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // PurchaseFireandTheft
-            // 
-            this.PurchaseFireandTheft.BackColor = System.Drawing.Color.BurlyWood;
-            this.PurchaseFireandTheft.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PurchaseFireandTheft.Location = new System.Drawing.Point(57, 213);
-            this.PurchaseFireandTheft.Name = "PurchaseFireandTheft";
-            this.PurchaseFireandTheft.Size = new System.Drawing.Size(128, 77);
-            this.PurchaseFireandTheft.TabIndex = 0;
-            this.PurchaseFireandTheft.Text = "Purchase";
-            this.PurchaseFireandTheft.UseVisualStyleBackColor = false;
-            // 
-            // PurchaseComp
-            // 
-            this.PurchaseComp.BackColor = System.Drawing.Color.Olive;
-            this.PurchaseComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PurchaseComp.Location = new System.Drawing.Point(57, 365);
-            this.PurchaseComp.Name = "PurchaseComp";
-            this.PurchaseComp.Size = new System.Drawing.Size(128, 80);
-            this.PurchaseComp.TabIndex = 1;
-            this.PurchaseComp.Text = "Purchase";
-            this.PurchaseComp.UseVisualStyleBackColor = false;
             // 
             // maimenubtn
             // 
@@ -82,6 +60,7 @@
             this.PurchasThirdParty.TabIndex = 3;
             this.PurchasThirdParty.Text = "Purchase";
             this.PurchasThirdParty.UseVisualStyleBackColor = false;
+            this.PurchasThirdParty.Click += new System.EventHandler(this.PurchasThirdParty_Click);
             // 
             // Newinslbl
             // 
@@ -93,39 +72,63 @@
             this.Newinslbl.TabIndex = 4;
             this.Newinslbl.Text = "New Insurance";
             // 
-            // label2
+            // PurchaseComp
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(325, 376);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(358, 87);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "(COMPREHENSIVE COVER) Everything above including fire and theft plus coverage of " +
-    "your own car";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.PurchaseComp.BackColor = System.Drawing.Color.Olive;
+            this.PurchaseComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PurchaseComp.Location = new System.Drawing.Point(57, 365);
+            this.PurchaseComp.Name = "PurchaseComp";
+            this.PurchaseComp.Size = new System.Drawing.Size(128, 80);
+            this.PurchaseComp.TabIndex = 1;
+            this.PurchaseComp.Text = "Purchase";
+            this.PurchaseComp.UseVisualStyleBackColor = false;
+            this.PurchaseComp.Click += new System.EventHandler(this.PurchaseComp_Click);
+            // 
+            // PurchaseFireandTheft
+            // 
+            this.PurchaseFireandTheft.BackColor = System.Drawing.Color.BurlyWood;
+            this.PurchaseFireandTheft.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PurchaseFireandTheft.Location = new System.Drawing.Point(57, 213);
+            this.PurchaseFireandTheft.Name = "PurchaseFireandTheft";
+            this.PurchaseFireandTheft.Size = new System.Drawing.Size(128, 77);
+            this.PurchaseFireandTheft.TabIndex = 0;
+            this.PurchaseFireandTheft.Text = "Purchase";
+            this.PurchaseFireandTheft.UseVisualStyleBackColor = false;
+            this.PurchaseFireandTheft.Click += new System.EventHandler(this.PurchaseFireandTheft_Click);
+            // 
+            // thirdpartylbl
+            // 
+            this.thirdpartylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thirdpartylbl.Location = new System.Drawing.Point(237, 81);
+            this.thirdpartylbl.Name = "thirdpartylbl";
+            this.thirdpartylbl.Size = new System.Drawing.Size(511, 84);
+            this.thirdpartylbl.TabIndex = 7;
+            this.thirdpartylbl.Text = "(THIRD PARTY ) If you are at fault, a third party will cover all the cost of deat" +
+    "h, damage/injury to the other party \r\n(RM1500)\r\n";
+            this.thirdpartylbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(320, 213);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(353, 91);
+            this.label3.Size = new System.Drawing.Size(353, 130);
             this.label3.TabIndex = 6;
             this.label3.Text = "(THIRD PARTY, FIRE AND THEFT) Everything above is covered, plus coverage to your " +
-    "own vehicle if your car gets caught in Fire\r\n";
+    "own vehicle if your car gets caught in Fire\r\n(RM2000)\r\n";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // thirdpartylbl
+            // label2
             // 
-            this.thirdpartylbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thirdpartylbl.Location = new System.Drawing.Point(300, 81);
-            this.thirdpartylbl.Name = "thirdpartylbl";
-            this.thirdpartylbl.Size = new System.Drawing.Size(383, 92);
-            this.thirdpartylbl.TabIndex = 7;
-            this.thirdpartylbl.Text = "(THIRD PARTY ) If you are at fault, a third party will cover all the cost of deat" +
-    "h, damage/injury to the other party\r\n";
-            this.thirdpartylbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(325, 376);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(358, 120);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "(COMPREHENSIVE COVER) Everything above including fire and theft plus coverage of " +
+    "your own car)\r\n(RM2500)\r\n";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // NewInsuranceFrm
             // 
@@ -150,14 +153,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button PurchaseFireandTheft;
-        private System.Windows.Forms.Button PurchaseComp;
         private System.Windows.Forms.Button maimenubtn;
         private System.Windows.Forms.Button PurchasThirdParty;
         private System.Windows.Forms.Label Newinslbl;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button PurchaseComp;
+        private System.Windows.Forms.Button PurchaseFireandTheft;
         private System.Windows.Forms.Label thirdpartylbl;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

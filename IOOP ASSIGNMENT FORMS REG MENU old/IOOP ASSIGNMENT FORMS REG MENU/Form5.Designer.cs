@@ -92,6 +92,7 @@
             this.Searchbtn.TabIndex = 5;
             this.Searchbtn.Text = "Search";
             this.Searchbtn.UseVisualStyleBackColor = false;
+            this.Searchbtn.Click += new System.EventHandler(this.Searchbtn_Click);
             // 
             // textBox2
             // 
@@ -117,6 +118,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -127,6 +129,7 @@
             this.label1.Size = new System.Drawing.Size(71, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "Address";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -137,6 +140,7 @@
             this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Password";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // edituserfrm
             // 

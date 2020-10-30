@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,96 +11,31 @@ using System.Windows.Forms;
 
 namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
 {
-    public partial class Registeration : Form
+    public partial class Form1 : Form
     {
-        public Registeration()
+        SqlConnection con = new SqlConnection();
+        SqlCommand com = new SqlCommand();
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-
+            con.ConnectionString = "Data Source=LAPTOP-SQA3VM06;Initial Catalog=IOOP assignment; Integrated Security=true;";
+            con.Open();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-
+            com.CommandText = "";
+            com.Connection = con;
+            com.ExecuteNonQuery();
         }
 
-        private void Registeration_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            
-        }
 
-        private void Backbutton_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            loginForm f3 = new loginForm();
-            f3.Show();
-        }
-
-        private void RegisterBTN_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (!(textBox1.Text == String.Empty))
-                {
-                    if (!(textBox2.Text == String.Empty))
-                    {
-                        if (!(textBox3.Text == String.Empty))
-                        {
-                            if (!(textBox4.Text == String.Empty))
-                            {
-                                if (!(textBox5.Text == String.Empty))
-                                {
-                                    if (!(textBox6.Text == String.Empty))
-                                    {
-                                        this.Hide();
-                                        MenuForm f2 = new MenuForm();
-                                        f2.ShowDialog();
-                                    }
-                                    else
-                                    {
-                                        MessageBox.Show("Please fill in your information");
-                                    }
-                                }
-                                else
-                                {
-                                    MessageBox.Show("Please fill in your information");
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show("Please fill in your information");
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("Please fill in your information");
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Please fill in your information");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Please fill in your information");
-                }
-            }
-            catch(Exception es)
-            {
-                MessageBox.Show(es.Message);
-            }
-        }
-
-        private void tologinbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            loginForm f3 = new loginForm();
-            f3.Show();
         }
     }
 }
