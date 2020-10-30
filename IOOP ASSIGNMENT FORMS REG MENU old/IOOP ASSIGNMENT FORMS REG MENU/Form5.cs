@@ -19,41 +19,20 @@ namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-HL6EPRE;Initial Catalog=IOOP assignment; Integrated Security=true;");
-            con.Open();
-            string sqlQuery = "UPDATE REGESTERATION_T SET app_address = '" + textBox2.Text + "' where app_id = '" + textBox1.Text + "';";
-            SqlCommand cmd = new SqlCommand(sqlQuery, con);
-            int result = cmd.ExecuteNonQuery();
-            if (result > 0)
-            {
-                lblMessage.Text = "Successfully Updated!";
-            }
-            else
-            {
-                lblMessage.Text = "Not able to Update now! Please try again later";
-            }
-        }
+        
 
-        private void EditUserlbl_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void Form5_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Mainbtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            MenuForm f2 = new MenuForm();
-            f2.Show();
-        }
+        
 
-        private void Searchbtn_Click(object sender, EventArgs e)
+       
+
+        private void Search_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=LAPTOP-SQA3VM06;Initial Catalog=IOOP assignment; Integrated Security=true;");
             con.Open();
@@ -84,9 +63,26 @@ namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Update1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-HL6EPRE;Initial Catalog=IOOP assignment; Integrated Security=true;");
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-SQA3VM06;Initial Catalog=IOOP assignment; Integrated Security=true;");
+            con.Open();
+            string sqlQuery = "UPDATE REGESTERATION_T SET app_address = '" + textBox2.Text + "' where app_id = '" + textBox1.Text + "';";
+            SqlCommand cmd = new SqlCommand(sqlQuery, con);
+            int result = cmd.ExecuteNonQuery();
+            if (result > 0)
+            {
+                lblMessage.Text = "Successfully Updated!";
+            }
+            else
+            {
+                lblMessage.Text = "Not able to Update now! Please try again later";
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=LAPTOP-SQA3VM06;Initial Catalog=IOOP assignment; Integrated Security=true;");
             con.Open();
             string sqlQuery = "UPDATE REGESTERATION_T SET app_password = '" + textBox3.Text + "' where app_id = '" + textBox1.Text + "';";
             SqlCommand cmd = new SqlCommand(sqlQuery, con);
@@ -101,14 +97,11 @@ namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Mainbtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            MenuForm f2 = new MenuForm();
+            f2.Show();
         }
     }
 }

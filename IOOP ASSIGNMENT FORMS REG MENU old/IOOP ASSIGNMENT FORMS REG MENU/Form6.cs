@@ -54,5 +54,10 @@ namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
             f8.Show();
             this.Hide();
         }
+
+        private void thirdpartylbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

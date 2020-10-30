@@ -106,6 +106,7 @@
             this.thirdpartylbl.Text = "(THIRD PARTY ) If you are at fault, a third party will cover all the cost of deat" +
     "h, damage/injury to the other party \r\n(RM1500)\r\n";
             this.thirdpartylbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.thirdpartylbl.Click += new System.EventHandler(this.thirdpartylbl_Click);
             // 
             // label3
             // 
