@@ -37,10 +37,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.start = new System.Windows.Forms.DateTimePicker();
-            this.end = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -48,7 +44,7 @@
             // 
             this.back.BackColor = System.Drawing.Color.IndianRed;
             this.back.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.Location = new System.Drawing.Point(23, 512);
+            this.back.Location = new System.Drawing.Point(75, 402);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(90, 45);
             this.back.TabIndex = 0;
@@ -59,7 +55,7 @@
             // 
             this.Menu.BackColor = System.Drawing.Color.Yellow;
             this.Menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Menu.Location = new System.Drawing.Point(647, 496);
+            this.Menu.Location = new System.Drawing.Point(500, 402);
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(108, 45);
             this.Menu.TabIndex = 1;
@@ -71,7 +67,7 @@
             // 
             this.Purchase.BackColor = System.Drawing.Color.Chartreuse;
             this.Purchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Purchase.Location = new System.Drawing.Point(305, 384);
+            this.Purchase.Location = new System.Drawing.Point(305, 277);
             this.Purchase.Name = "Purchase";
             this.Purchase.Size = new System.Drawing.Size(138, 70);
             this.Purchase.TabIndex = 2;
@@ -143,40 +139,6 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Select Type of Insurance";
             // 
-            // start
-            // 
-            this.start.Location = new System.Drawing.Point(379, 232);
-            this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(200, 22);
-            this.start.TabIndex = 10;
-            // 
-            // end
-            // 
-            this.end.Location = new System.Drawing.Point(379, 318);
-            this.end.Name = "end";
-            this.end.Size = new System.Drawing.Size(200, 22);
-            this.end.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(83, 232);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(268, 25);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Select Start date of Insurance";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(83, 318);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(260, 25);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Select end date of Insurance";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -192,12 +154,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 597);
+            this.ClientSize = new System.Drawing.Size(672, 520);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.end);
-            this.Controls.Add(this.start);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -226,10 +184,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker start;
-        private System.Windows.Forms.DateTimePicker end;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
     }
 }

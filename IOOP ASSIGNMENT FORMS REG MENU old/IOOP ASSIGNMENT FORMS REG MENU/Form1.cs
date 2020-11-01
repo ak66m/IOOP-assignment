@@ -50,8 +50,8 @@ namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
                         double Total = totalThirdpaarty + sst + stamp + rate;
 
 
-                        com.CommandText = "insert into PAYMENT (app_id, payment_method, type_of_insurance, date_start, date_end, total) values ('" + textBox1.Text + "','" + comboBox1.SelectedItem + "','" + comboBox2.SelectedItem + "','" + start.Value + "'," +
-                            "'" + end.Value + "','"+ Total + "') ";
+                        com.CommandText = "insert into payment (app_id, payment_method, type_of_insurance, date_start, date_end, total, years_used) values ('" + textBox1.Text + "','" + comboBox1.SelectedItem + "','" + comboBox2.SelectedItem + "','" + DateTime.Now + "'," +
+                            "'" + DateTime.Now.AddDays(365) + "','"+ Total + "','0 years') ";
                         com.Connection = con;
                         com.ExecuteNonQuery(); 
                 
@@ -67,8 +67,8 @@ namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
                         double Total = Thirdpartyandtefth + sst + stamp + rate;
 
 
-                        com.CommandText = "insert into PAYMENT (app_id, payment_method, type_of_insurance, date_start, date_end, total) values ('" + textBox1.Text + "','" + comboBox1.SelectedItem + "','" + comboBox2.SelectedItem + "','" + start.Value + "'," +
-                            "'" + end.Value + "','" + Total + "') ";
+                        com.CommandText = "insert into payment (app_id, payment_method, type_of_insurance, date_start, date_end, total, years_used) values ('" + textBox1.Text + "','" + comboBox1.SelectedItem + "','" + comboBox2.SelectedItem + "','" + DateTime.Now + "'," +
+                            "'" + DateTime.Now.AddDays(365) + "','" + Total + "','0 years') ";
                         com.Connection = con;
                         com.ExecuteNonQuery();
                     }
@@ -83,13 +83,18 @@ namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
 
 
 
-                        com.CommandText = "insert into PAYMENT (app_id, payment_method, type_of_insurance, date_start, date_end, total) values ('" + textBox1.Text + "','" + comboBox1.SelectedItem + "','" + comboBox2.SelectedItem + "','" + start.Value + "'," +
-                            "'" + end.Value + "','" + Total + "') ";
+                        com.CommandText = "insert into payment (app_id, payment_method, type_of_insurance, date_start, date_end, total,years_used) values ('" + textBox1.Text + "','" + comboBox1.SelectedItem + "','" + comboBox2.SelectedItem + "','" + DateTime.Now + "'," +
+                            "'" + DateTime.Now.AddDays(365) + "','" + Total + "','0 years') ";
                         com.Connection = con;
                         com.ExecuteNonQuery();
+                       
                     }
+                    MessageBox.Show("Payment Successful!");
 
-                    MessageBox.Show("Payment successful");
+                    this.Hide();
+                    MenuForm f2 = new MenuForm();
+                    f2.Show();
+
 
                 }
                 else
@@ -114,7 +119,9 @@ namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            MenuForm f2 = new MenuForm();
+            f2.Show();
         }
     }
 }
