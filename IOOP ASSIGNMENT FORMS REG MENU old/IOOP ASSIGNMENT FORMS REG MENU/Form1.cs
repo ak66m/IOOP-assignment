@@ -91,9 +91,6 @@ namespace IOOP_ASSIGNMENT_FORMS_REG_MENU
                     }
                     MessageBox.Show("Payment Successful!");
 
-                    this.Hide();
-                    MenuForm f2 = new MenuForm();
-                    f2.Show();
 
 
                 }
